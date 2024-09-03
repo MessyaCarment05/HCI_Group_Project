@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservation.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <title>Reservation</title>
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="atas-wrapper">
+             <div class="atas-left-wrapper">
+                 <span class="line1"></span>
+                  <span class="line2"></span>
+                 <div class="open-wrapper">
+                     <img src="assets/open.png"  id="open-close" alt="" height="80px" width="180px">
+                 </div>
+             </div>
+             <div class="atas-right-wrapper">
+                 <div class="navigation-wrapper">
+                     <div class="navigation-link">
+                         <a class="nav-link" href="home.html">HOME</a>
+                         <a class="nav-link" href="menu.html">MENU</a>
+                         <a class="active" href="reservation.html">RESERVATION</a>
+                         <a class="nav-link" href="review.html">REVIEW</a>
+                         <a class="nav-link" href="history.html">HISTORY</a>
+                     </div>
+                 </div>
+             </div>
+        </div>
+        <div class="tengah-wrapper">
+          <div class="logo-header">
+             <img src="assets/logo.png" alt="" height="450px" >
+          </div>
+        </div>
+        <div class="bawah-wrapper">
+             <img class="gambar-frame"src="assets/frame.png" alt="" width="1700px" height="60px">
+        </div>
+    </div>
+    <div class="content">
+        <div class="left revealLeft">
+            <img src="assets/waiter.png" alt="">
+            <h1>Reserve Now</h1>
+            <p>for an unforgettable experience<br>here in Muto!</p>
+        </div>
+        <div class="right revealRight">
+            <form action="" onsubmit="formValidation(event)">
+                <img src="assets/form-background.jpg" alt="">
+                <div class="form-content">
+                    <div class="title">
+                        Reservation Form
+                    </div>
+                    <h1>Customer Information</h1>
+                    <div class="name">
+                        <input type="text" placeholder="First Name" id="fnameInput">
+                        <input type="text" placeholder="Last Name" id="lnameInput">
+                    </div>
+                    <input type="text" placeholder="Phone Number" id="numberInput">
+                    <div class="email">
+                        <input type="email" placeholder="E-mail" id="emailInput">
+                        <input type="password" placeholder="Password" id="passwordInput">
+                    </div>
+                    
+                    <h1>Reservation Date</h1>
+                    <div class="date">
+                        <input type="date" id="dateInput">
+                    </div>
+                    
+
+                    <button class="confirm" type="submit">Confirm</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-left">
+          <div class="logo-footer">
+              <img src="assets/logo.png" alt="" height="200px" width="200px">
+          </div>
+          <div class="tulisan-footer">
+              <div class="tulisan-atas-footer">
+                  <h3>MUTO Italian Restaurant</h3>
+              </div>
+              <div class="tulisan-bawah-footer">
+                 <p>Kebon Jeruk Street No 45</p>
+                 <p>Kemanggisan, South Jakarta</p>
+                 <p> No. telp: 021-2045968</p>
+                 <p>  Email: mutoIDN@gmail.com</p>
+              </div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="follow-us">
+              <h3>Follow us on</h3>
+          </div>
+          <div class="sosmed">
+              <div class="instagram-wrapper">
+                  <div class="image-instagram-wrapper">
+                      <i class="fa fa-instagram"></i>
+                  </div>
+                  <p>@MutoIDN</p>
+              </div>
+              <div class="twitter-wrapper">
+                  <div class="image-twitter-wrapper">
+                      <i class="fa fa-twitter"></i>
+                  </div>
+                  <p>@MutoIDN</p>
+              </div>
+          </div>
+        </div>
+     </footer>
+     <script src="home.js"></script>
+     <script src="reservation.js"></script>
+     <script src="transitionAbove.js"></script>
+    <script src="transitionBottom.js"></script>
+    <script src="transitionLeft.js"></script>
+    <script src="transitionRight.js"></script>
+</body>
+</html>

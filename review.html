@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="review.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <title>Review</title>
+</head>
+<body>
+    <div class="thank-you revealBottom" id="thankyouPopup">
+        <div class="message">
+            <button class="close" id="closeButton1">x</button>
+            <h1>Thank You!</h1>
+        </div>
+    </div>
+    <div class="review-popup" id="reviewPopup">
+        <form class="review-form">
+            <button class="close" id="closeButton2">x</button>
+            <h1>Review</h1>
+            <div class="input-name">
+                <h2>Name</h2>
+                <p>Enter your name or "Anonymous"</p>
+                <div class="input-box">
+                    <input type="text">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="input-desc">
+                <h2>Description</h2>
+                <p>Enter your description towards Muto's products and services</p>
+                <div class="input-box">
+                    <input type="text">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="input-stars">
+                <h2>Rating</h2>
+                <p>Provide a rating for our restaurant</p>
+                <span class="rating-stars">
+                    <span class="star" id="star1">&starf;</span>
+                    <span class="star" id="star2">&starf;</span>
+                    <span class="star" id="star3">&starf;</span>
+                    <span class="star" id="star4">&starf;</span>
+                    <span class="star" id="star5">&starf;</span>
+                </span>
+            </div>
+
+            <div class="submit-button" id="submitButton">
+                <button id="submitButton"><p>Submit</p></button>
+            </div>
+            
+        </form>
+    </div>
+    <div class="header-wrapper">
+        <div class="atas-wrapper">
+             <div class="atas-left-wrapper">
+                 <span class="line1"></span>
+                  <span class="line2"></span>
+                 <div class="open-wrapper">
+                     <img src="assets/open.png"  id="open-close"  alt="" height="80px" width="180px">
+                 </div>
+             </div>
+             <div class="atas-right-wrapper">
+                 <div class="navigation-wrapper">
+                     <div class="navigation-link">
+                         <a class="nav-link" href="home.html">HOME</a>
+                         <a class="nav-link" href="menu.html">MENU</a>
+                         <a class="nav-link" href="reservation.html">RESERVATION</a>
+                         <a class="active" href="review.html">REVIEW</a>
+                         <a class="nav-link" href="history.html">HISTORY</a>
+                     </div>
+                 </div>
+             </div>
+        </div>
+        <div class="tengah-wrapper">
+          <div class="logo-header">
+             <img class="logo" src="assets/logo.png" alt="" height="450px" >
+          </div>
+        </div>
+        <div class="bawah-wrapper">
+             <img class="gambar-frame"src="assets/frame.png" alt="" width="1700px" height="60px">
+        </div>
+    </div>
+    <div class="content">
+        <div class="left revealLeft">
+            <div class="rating">
+                <div class="overall">
+                    Overall Rating
+                </div>
+                <p>4.9</p>
+            </div>
+            <button class="add" id="addReview">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="right">
+            <div class="testi revealBottom">
+                <div class="title">
+                    Anonymous
+                    <div class="stars">
+                        <img src="assets/stars.png" alt="">
+                    </div>
+                </div>
+                <div class="words">
+                    Very delicious! Worth to try!!
+                </div>
+            </div>
+            <div class="testi revealBottom">
+                <div class="title">
+                    Desty Guna
+                    <div class="stars">
+                        <img src="assets/stars.png" alt="">
+                    </div>
+                </div>
+                <div class="words">
+                    Best Lasagna ever tried!! Will definitely come back.
+                </div>
+            </div>
+            <div class="testi revealBottom">
+                <div class="title">
+                    Anonymous
+                    <div class="stars">
+                        <img src="assets/stars.png" alt="">
+                    </div>
+                </div>
+                <div class="words">
+                    Best Italian restaurant ever! Been here since I was a kid and Muto never failed to surprise me.
+                </div>
+            </div>
+            <div class="testi revealBottom">
+                <div class="title">
+                    Nikra Wooly
+                    <div class="stars">
+                        <img src="assets/stars.png" alt="">
+                    </div>
+                </div>
+                <div class="words">
+                    Some very interesting drinks too! Enjoyed Passion Squish the most!
+                </div>
+            </div>
+            <div class="testi revealBottom">
+                <div class="title">
+                    Becky Lina
+                    <div class="stars">
+                        <img src="assets/stars.png" alt="">
+                    </div>
+                </div>
+                <div class="words">
+                    Great! Very much recommended! 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-left">
+          <div class="logo-footer">
+              <img src="assets/logo.png" alt="" height="200px" width="200px">
+          </div>
+          <div class="tulisan-footer">
+              <div class="tulisan-atas-footer">
+                  <h3>MUTO Italian Restaurant</h3>
+              </div>
+              <div class="tulisan-bawah-footer">
+                 <p>Kebon Jeruk Street No 45</p>
+                 <p>Kemanggisan, South Jakarta</p>
+                 <p> No. telp: 021-2045968</p>
+                 <p>  Email: mutoIDN@gmail.com</p>
+              </div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="follow-us">
+              <h3>Follow us on</h3>
+          </div>
+          <div class="sosmed">
+              <div class="instagram-wrapper">
+                  <div class="image-instagram-wrapper">
+                      <i class="fa fa-instagram"></i>
+                  </div>
+                  <p>@MutoIDN</p>
+              </div>
+              <div class="twitter-wrapper">
+                  <div class="image-twitter-wrapper">
+                      <i class="fa fa-twitter"></i>
+                  </div>
+                  <p>@MutoIDN</p>
+              </div>
+          </div>
+        </div>
+     </footer>
+     <script src="home.js"></script>
+     <script src="review.js"></script>
+     <script src="reservation.js"></script>
+     <script src="transitionAbove.js"></script>
+    <script src="transitionBottom.js"></script>
+    <script src="transitionLeft.js"></script>
+    <script src="transitionRight.js"></script>
+</body>
+</html>

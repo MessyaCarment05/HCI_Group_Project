@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="atas-wrapper">
+             <div class="atas-left-wrapper">
+                 <span class="line1"></span>
+                  <span class="line2"></span>
+                 <div class="open-wrapper">
+                     <img src="./picture/open.png"  id="open-close" alt="" height="80px" width="180px">
+                 </div>
+             </div>
+             <div class="atas-right-wrapper">
+                 <div class="navigation-wrapper">
+                     <div class="navigation-link">
+                         <a class="nav-link" href="home.html">HOME</a>
+                         <a class="active" href="Menu.html">MENU</a>
+                         <a class="nav-link" href="reservation.html">RESERVATION</a>
+                         <a class="nav-link" href="review.html">REVIEW</a>
+                         <a class="nav-link" href="History.html">HISTORY</a>
+                     </div>
+                 </div>
+             </div>
+        </div>
+        <div class="tengah-wrapper">
+          <div class="logo-header">
+             <img src="./picture/logoBIG-removebg-preview.png" alt="" class="logo" height="450px">
+          </div>
+        </div>
+        <div class="bawah-wrapper">
+             <img src="./picture/frame.png" alt="" width="1700px" height="60px" class="gambar-frame">
+        </div>
+    </div>
+    <div class="menu-wrapper">
+       <div class="title revealAbove">Our Menu</div>
+       <div class="title-desc revealBottom">Please hover the picture to see the details</div>
+       <div class="button-menu">
+        <button class="menu-title" onclick="openMenu('Pizza', this, '#FFE897')" id="defaultOpen">Pizza</button>
+        <button class="menu-title" onclick="openMenu('Pasta', this, '#FFE897')">Pasta</button>
+        <button class="menu-title" onclick="openMenu('Others', this, '#FFE897')">Others</button>
+        <button class="menu-title" onclick="openMenu('Beverages', this, '#FFE897')">Beverages</button>
+       </div>
+       <div id="Pizza" class="menu-container">
+           <div class="menu">
+               <div class="menu-image">
+                   <img src="./picture/pizza1.jpeg" alt="" class="menu-img">
+                </div>
+                <div class="overlay">
+                    <h1>Ama La Carne</h1>
+                    <img src="./picture/chef.png" alt="" class="chef">
+                    <img src="./picture/like.png" alt="" class="like">
+                    <span class="line"></span>
+                    <div class="desc-menu">
+                        minced beef, beef sausage, pepperoni, mozzarella cheese, tomato sauce
+                    </div>
+                    <pre class="price-menu">R 65K  M 120K  L 175K</pre>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-image">
+                    <img src="./picture/pizza2.jpg" alt="" class="menu-img">
+                 </div>
+                 <div class="overlay">
+                     <h1>Festa Dei Funghi</h1>
+                     <span class="line"></span>
+                     <div class="desc-menu">
+                         champignon, mozzarella cheese, cream sauce, parmesan
+                     </div>
+                     <pre class="price-menu">R 50K  M 105K  L 150K</pre>
+                 </div>
+             </div>
+             <div class="menu">
+                <div class="menu-image">
+                    <img src="./picture/pizza3.jpg" alt="" class="menu-img">
+                 </div>
+                 <div class="overlay">
+                    <img src="./picture/like.png" alt="" class="like">
+                     <h1>Formaggio</h1>
+                     <span class="line"></span>
+                     <div class="desc-menu">
+                         cream, parmesan, mozzarella cheese, tomato sauce
+                     </div>
+                     <pre class="price-menu">R 60K  M 110K  L 165K</pre>
+                 </div>
+             </div>
+             <div class="menu">
+                <div class="menu-image">
+                    <img src="./picture/pizza4.jpg" alt="" class="menu-img">
+                 </div>
+                 <div class="overlay">
+                    <img src="./picture/chef.png" alt="" class="chef">
+                     <h1>Verdure Colorate</h1>
+                     <span class="line"></span>
+                     <div class="desc-menu">
+                         chicken, tomato, black olive, onion, corn, mozzarella cheese, tomato sauce
+                     </div>
+                     <pre class="price-menu">R 85K  M 140K  L 190K</pre>
+                 </div>
+             </div>
+             <div class="menu">
+                <div class="menu-image">
+                    <img src="./picture/pizza5.jpg" alt="" class="menu-img">
+                 </div>
+                 <div class="overlay">
+                    <img src="./picture/chef.png" alt="" class="chef">
+                    <img src="./picture/like.png" alt="" class="like">
+                     <h1>Rosso Verde</h1>
+                     <span class="line"></span>
+                     <div class="desc-menu">
+                         rasberry, green tea, peanut, brown sugar
+                     </div>
+                     <pre class="price-menu">R 70K  M 135K  L 180K</pre>
+                 </div>
+             </div>
+             <div class="menu">
+                <div class="menu-image">
+                    <img src="./picture/Pizza6.jpg" alt="" class="menu-img">
+                 </div>
+                 <div class="overlay">
+                     <h1>Tutto Pomodorini</h1>
+                     <span class="line"></span>
+                     <div class="desc-menu">
+                         red cherry tomatoes, yellow cherry tomatoes, basil, shrimp, mozzarella cheese, tomato sauce
+                     </div>
+                     <pre class="price-menu">R 80K  M 145K  L 195K</pre>
+                 </div>
+             </div>
+             <div class="note-chef">
+                 <img src="./picture/chef.png" alt="" class="chef">
+                 <div class="chef-desc">: chef recommend</div>
+             </div>
+             <div class="note-like">
+                <img src="./picture/like.png" alt="" class="like">
+                <div class="like-desc">: most liked</div>
+            </div>
+        </div>
+        <div id="Pasta" class="menu-container">
+            <div class="menu">
+                <div class="menu-image">
+                    <img src="./picture/Pasta1.jpg" alt="" class="menu-img">
+                 </div>
+                 <div class="overlay">
+                    <img src="./picture/chef.png" alt="" class="chef">
+                     <h1>Bolognese</h1>
+                     <span class="line"></span>
+                     <div class="desc-menu">
+                         spaghetti, minced beef, parmesan, tomato sauce
+                     </div>
+                     <pre class="price-menu">56K</pre>
+                 </div>
+             </div>
+             <div class="menu">
+                 <div class="menu-image">
+                     <img src="./picture/Pasta2.jpeg" alt="" class="menu-img">
+                  </div>
+                  <div class="overlay">
+                    <img src="./picture/like.png" alt="" class="like">
+                      <h1>Bolognese Raviolli</h1>
+                      <span class="line"></span>
+                      <div class="desc-menu">
+                          minced beef, sausage, raviolli,cheese, tomato sauce
+                      </div>
+                      <pre class="price-menu">60K</pre>
+                  </div>
+              </div>
+              <div class="menu">
+                 <div class="menu-image">
+                     <img src="./picture/Pasta3.jpg" alt="" class="menu-img">
+                  </div>
+                  <div class="overlay">
+                      <h1>Frutti di Mare</h1>
+                      <span class="line"></span>
+                      <div class="desc-menu">
+                        fettuccine, shrimp, scallop, spinach, cheese, cream sauce
+                      </div>
+                      <pre class="price-menu">80K</pre>
+                  </div>
+              </div>
+              <div class="menu">
+                 <div class="menu-image">
+                     <img src="./picture/Pasta4.jpg" alt="" class="menu-img">
+                  </div>
+                  <div class="overlay">
+                    <img src="./picture/chef.png" alt="" class="chef">
+                      <h1>Pesto alla Genovese</h1>
+                      <span class="line"></span>
+                      <div class="desc-menu">
+                        spaghetti, spinach, peanut, ham, cheese, pesto sauce
+                      </div>
+                      <pre class="price-menu">50K</pre>
+                  </div>
+              </div>
+              <div class="menu">
+                 <div class="menu-image">
+                     <img src="./picture/Pasta5.jpeg" alt="" class="menu-img">
+                  </div>
+                  <div class="overlay">
+                    <img src="./picture/like.png" alt="" class="like">
+                      <h1>Carbonara</h1>
+                      <span class="line"></span>
+                      <div class="desc-menu">
+                        spaghetti, minced beef, beef sausage, pepperoni, mozzarella cheese, cream sauce
+                      </div>
+                      <pre class="price-menu">70K</pre>
+                  </div>
+              </div>
+              <div class="menu">
+                <div class="menu-image">
+                    <img src="./picture/Pasta6.jpg" alt="" class="menu-img">
+                 </div>
+                 <div class="overlay">
+                    <img src="./picture/chef.png" alt="" class="chef">
+                    <img src="./picture/like.png" alt="" class="like">
+                     <h1>Lasagna</h1>
+                     <span class="line"></span>
+                     <div class="desc-menu">
+                        lasagna pasta, minced beef, mozzarella cheese, tomato sauce, cream cheese
+                     </div>
+                     <pre class="price-menu">76K</pre>
+                 </div>
+             </div>
+             <div class="note-chef">
+                <img src="./picture/chef.png" alt="" class="chef">
+                <div class="chef-desc">: chef recommend</div>
+            </div>
+            <div class="note-like">
+               <img src="./picture/like.png" alt="" class="like">
+               <div class="like-desc">: most liked</div>
+           </div>
+         </div>
+         <div id="Others" class="menu-container">
+            <div class="menu">
+                <div class="menu-image">
+                    <img src="./picture/Others1.jpg" alt="" class="menu-img">
+                 </div>
+                 <div class="overlay">
+                    <img src="./picture/chef.png" alt="" class="chef">
+                    <img src="./picture/like.png" alt="" class="like">
+                     <h1>Tiramisu</h1>
+                     <span class="line"></span>
+                     <div class="desc-menu">
+                        sponge cake, coffee, mascarpone cheese, whipped cream, cocoa powder
+                     </div>
+                     <pre class="price-menu">45K</pre>
+                 </div>
+             </div>
+             <div class="menu">
+                 <div class="menu-image">
+                     <img src="./picture/Others5.jpg" alt="" class="menu-img">
+                  </div>
+                  <div class="overlay">
+                    <img src="./picture/like.png" alt="" class="like">
+                      <h1>Gnocchi Con Piselli</h1>
+                      <span class="line"></span>
+                      <div class="desc-menu">
+                        potatoes, flour, eggs, peas, bacon, basil, parmesan cheese, cream
+                      </div>
+                      <pre class="price-menu">50K</pre>
+                  </div>
+              </div>
+              <div class="menu">
+                 <div class="menu-image">
+                     <img src="./picture/Others4.jpeg" alt="" class="menu-img">
+                  </div>
+                  <div class="overlay">
+                    <img src="./picture/chef.png" alt="" class="chef">
+                      <h1>Cannoli al Caffè</h1>
+                      <span class="line"></span>
+                      <div class="desc-menu">
+                        flour, sugar, butter, coffee, banana, cream cheese, cinnamon
+                      </div>
+                      <pre class="price-menu">38K</pre>
+                  </div>
+              </div>
+              <div class="menu">
+                 <div class="menu-image">
+                     <img src="./picture/Others2.jpg" alt="" class="menu-img">
+                  </div>
+                  <div class="overlay">
+                      <h1>Bruschetta Rosse</h1>
+                      <span class="line"></span>
+                      <div class="desc-menu">
+                        ciabatta bread, tomatoes, garlic, ricotta cheese, parsley, olive oil
+                      </div>
+                      <pre class="price-menu">41K</pre>
+                  </div>
+              </div>
+              <div class="menu">
+                 <div class="menu-image">
+                     <img src="./picture/Others6.jpg" alt="" class="menu-img">
+                  </div>
+                  <div class="overlay">
+                    <img src="./picture/like.png" alt="" class="like">
+                      <h1>Biscotti a Due Lati</h1>
+                      <span class="line"></span>
+                      <div class="desc-menu">
+                        flour, eggs, almonds, wheat, canberry, honey, cocoa powder
+                      </div>
+                      <pre class="price-menu">30K</pre>
+                  </div>
+              </div>
+              <div class="menu">
+                <div class="menu-image">
+                    <img src="./picture/Others3.jpg" alt="" class="menu-img">
+                 </div>
+                 <div class="overlay">
+                    <img src="./picture/chef.png" alt="" class="chef">
+                     <h1>Risotto Ai Gamberi</h1>
+                     <span class="line"></span>
+                     <div class="desc-menu">
+                        arborio rice, shrimp, chicken broth, garlic, shallots, mushrooms, basil, butter, parmesan
+                     </div>
+                     <pre class="price-menu">57K</pre>
+                 </div>
+             </div>
+             <div class="note-chef">
+                <img src="./picture/chef.png" alt="" class="chef">
+                <div class="chef-desc">: chef recommend</div>
+            </div>
+            <div class="note-like">
+               <img src="./picture/like.png" alt="" class="like">
+               <div class="like-desc">: most liked</div>
+           </div>
+         </div>
+         <div id="Beverages" class="menu-container">
+            <div class="menu">
+                <div class="menu-image">
+                    <img src="./picture/Beve1.jpg" alt="" class="menu-img">
+                 </div>
+                 <div class="overlay">
+                    <img src="./picture/like.png" alt="" class="like">
+                     <h1>Spezie del Vino</h1>
+                     <span class="line"></span>
+                     <div class="desc-menu">
+                         wine, cloves, cinnamon, honey, lemon, star anise
+                     </div>
+                     <pre class="price-menu">31K</pre>
+                 </div>
+             </div>
+             <div class="menu">
+                 <div class="menu-image">
+                     <img src="./picture/Beve2.jpg" alt="" class="menu-img">
+                  </div>
+                  <div class="overlay">
+                    <img src="./picture/chef.png" alt="" class="chef">
+                    <img src="./picture/like.png" alt="" class="like">
+                      <h1>Galleggiante Rosso</h1>
+                      <span class="line"></span>
+                      <div class="desc-menu">
+                        blueberries, cranberries, raspberries, soda, honey, lychees
+                      </div>
+                      <pre class="price-menu">25K</pre>
+                  </div>
+              </div>
+              <div class="menu">
+                 <div class="menu-image">
+                     <img src="./picture/Beve3.jpg" alt="" class="menu-img">
+                  </div>
+                  <div class="overlay">
+                      <h1>Frappè alla Menta</h1>
+                      <span class="line"></span>
+                      <div class="desc-menu">
+                          mint, milk, honey, whipped cream
+                      </div>
+                      <pre class="price-menu">20K</pre>
+                  </div>
+              </div>
+              <div class="menu">
+                 <div class="menu-image">
+                     <img src="./picture/Beve4.jpg" alt="" class="menu-img">
+                  </div>
+                  <div class="overlay">
+                    <img src="./picture/chef.png" alt="" class="chef">
+                      <h1>Mirtillo Verde</h1>
+                      <span class="line"></span>
+                      <div class="desc-menu">
+                        mint, cranberry, soda, rock sugar
+                      </div>
+                      <pre class="price-menu">19K</pre>
+                  </div>
+              </div>
+              <div class="menu">
+                 <div class="menu-image">
+                     <img src="./picture/Beve5.jpg" alt="" class="menu-img">
+                  </div>
+                  <div class="overlay">
+                    <img src="./picture/like.png" alt="" class="like">
+                      <h1>Asoka Scintillante</h1>
+                      <span class="line"></span>
+                      <div class="desc-menu">                      
+                        asoka flower essence, honey, soda, lemon, strawberry
+                      </div>
+                      <pre class="price-menu">22K</pre>
+                  </div>
+              </div>
+              <div class="menu">
+                <div class="menu-image">
+                    <img src="./picture/Beve6.jpg" alt="" class="menu-img">
+                 </div>
+                 <div class="overlay">
+                    <img src="./picture/like.png" alt="" class="like">
+                     <h1>Mela Cannella</h1>
+                     <span class="line"></span>
+                     <div class="desc-menu">
+                        apple juice, cinnamon, cloves, honey
+                     </div>
+                     <pre class="price-menu">23K</pre>
+                 </div>
+             </div>
+             <div class="note-chef">
+                <img src="./picture/chef.png" alt="" class="chef">
+                <div class="chef-desc">: chef recommend</div>
+            </div>
+            <div class="note-like">
+               <img src="./picture/like.png" alt="" class="like">
+               <div class="like-desc">: most liked</div>
+           </div>
+         </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-left">
+          <div class="logo-footer">
+              <img src="assets/logo.png" alt="" height="200px" width="200px">
+          </div>
+          <div class="tulisan-footer">
+              <div class="tulisan-atas-footer">
+                  <h3>MUTO Italian Restaurant</h3>
+              </div>
+              <div class="tulisan-bawah-footer">
+                 <p>Kebon Jeruk Street No 45</p>
+                 <p>Kemanggisan, South Jakarta</p>
+                 <p> No. telp: 021-2045968</p>
+                 <p>  Email: mutoIDN@gmail.com</p>
+              </div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="follow-us">
+              <h3>Follow us on</h3>
+          </div>
+          <div class="sosmed">
+              <div class="instagram-wrapper">
+                  <div class="image-instagram-wrapper">
+                      <i class="fa fa-instagram"></i>
+                  </div>
+                  <p>@MutoIDN</p>
+              </div>
+              <div class="twitter-wrapper">
+                  <div class="image-twitter-wrapper">
+                      <i class="fa fa-twitter"></i>
+                  </div>
+                  <p>@MutoIDN</p>
+              </div>
+          </div>
+        </div>
+     </footer>
+     <script src="home.js"></script>
+    <script src="menu.js"></script>
+    <script src="transitionAbove.js"></script>
+    <script src="transitionBottom.js"></script>
+</body>
+</html>
