@@ -1,5 +1,5 @@
-﻿# Muto Restaurant
-#Overview
+﻿# MUTO Restaurant
+# Overview
 
 This repository contains the code for developing the MUTO Restaurant Italia website, an online platform that offers authentic Italian cuisine. The website features a user-friendly interface for browsing the menu, placing orders, and making reservations, allowing users to explore a variety of traditional dishes made with fresh ingredients.
 
